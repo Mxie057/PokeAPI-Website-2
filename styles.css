@@ -1,0 +1,19 @@
+.navbar-brand{
+}
+
+.home-button-icon{
+    width:3rem;
+}
+
+.main-container{
+    margin:2rem auto;
+    width: 100%;
+    max-width: 1200px;
+    background-color: palegoldenrod;
+    display: flex;
+}
+
+.card{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

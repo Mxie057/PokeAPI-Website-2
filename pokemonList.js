@@ -1,5 +1,5 @@
 const mainContainer = document.getElementById('mainContainer');
-const amountToDisplay = 6;
+const amountToDisplay = 898;
 const maxPokemonId = 898;
 const colors = {
     fire: '#EE8130',
@@ -34,15 +34,9 @@ const main_types = Object.keys(colors);
 
 const fetchPokemon = async () => {
     for(let i=1; i<=amountToDisplay; i++){
-        let pokemonID = getRandomPokemonID();
-        await getPokemon(pokemonID);
+        await getPokemon(i);
     }
 }
-
-function getRandomPokemonID(){
-    return Math.floor(Math.random() * maxPokemonId);
-}
-
 
 const getPokemon = async id => {
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;

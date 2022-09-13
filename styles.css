@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 .navbar-brand{
 }
 
@@ -5,15 +9,87 @@
     width:3rem;
 }
 
+.titleContainer{
+    background-color: rgb(233, 246, 250);
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 1200px;
+    width:100%;
+}
+
+.titleContainer h1{
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 2px 2px rgb(100, 154, 255);
+    color:rgb(53, 53, 53);
+    font-size: 60px;
+}
+
 .main-container{
     margin:2rem auto;
     width: 100%;
     max-width: 1200px;
-    background-color: palegoldenrod;
     display: flex;
 }
 
 .card{
     margin-left: 1rem;
     margin-right: 1rem;
+}
+
+.mainContainer{
+    background-color: rgb(233, 246, 250);
+    display:flex;
+    flex-wrap:wrap;
+    align-items: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.pokemon{
+    border-radius: 20px;
+    padding: 20px;
+    text-align:center;
+    margin:10px;
+}
+
+.pokemon .imgContainer{
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius:80%;
+    margin-top:20px;
+    width: 300px;
+    height:300px;
+}
+
+
+.pokemon .imgContainer img{
+    margin-top: 20px;
+    max-width: 90%;
+}
+
+.pokemon .legendaryImgContainer{
+    background-color: rgba(252, 228, 214, 0.979);
+    border-radius:80%;
+    border: 2px solid red;
+    font: italic;
+    margin-top:20px;
+    width: 300px;
+    height:300px;
+}
+
+.pokemon .legendaryImgContainer img{
+    margin-top: 20px;
+    max-width: 90%;
+}
+
+.pokemon .info{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.pokemon .info .number, .name{
+    font-weight: bold;
+}
+
+.pokemon .legendaryInfo{
+    color:blue;
 }

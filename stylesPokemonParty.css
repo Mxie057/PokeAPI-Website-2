@@ -1,14 +1,49 @@
 body{
-    background-color: black;
+    background:rgb(206, 231, 249);
 }
 
-.navbar-brand{
+header {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 11;
 }
 
-.home-button-icon{
+header .logo img{
     width:3rem;
 }
 
+header ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 10px;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+header ul li a:hover{
+    background:#ffffff;
+    color:rgb(0, 0, 0);
+    text-shadow: 2px 2px rgb(255, 255, 255);
+}
 .titleContainer{
     background-color: rgb(233, 246, 250);
     margin: 2rem auto;

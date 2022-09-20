@@ -51,18 +51,101 @@
             </div>
           </nav>
     </div>    -->
+    <header>
+      <a class="logo" href="index.html"><img class="home-button" src="./img/Poké_Ball_icon.svg.png"></img></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pokemon.html">Pokemon</a></li>
+        <li><a href="#">Types</a></li>
+        <li><a href="#">Berries</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="pokemonParty.html">Your Pokemon Party</a></li>
+      </ul>
+    </header>
 
-    <section>
+    <section class="parallaxElements">
         <img src="img/hoenn-backdrop.png" id="backdrop">
         <img src="img/hoenn-mountains.png" id="mountain">
         <img src="img/latios.png" id="latios">
+        <img src="img/latias.png" id="latias">
         <h2 id="homeTitle">PokeAPI Project</h2>
     </section>
+
+    <section>
+      <div class="infoPageOuter">
+        <div class="infoPageInner">
+          <div class="centeredInnerPage">
+            <h2>What is this?<br></h2>
+            <p>The <strong>"PokeAPI Project"</strong> is a project that was delegated to a team of Integration Engineers/Analysts at Cin7, designed to test them on their 
+              Front-End development skills.<br>Over Q2 and Q3 of 2022, an optional Front-end development workshop was run by <strong>Sergey Germanov</strong> 
+              (Integrations Project Manager) to help upskill the teams web<br> development skills. This webapp allows you to query
+              the PokeAPI public API for data on pokemon/items/locations and displays it in a user-friendly format</p>
+            <h3>Meet the Team:</h3>            
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="teamCards">
+      <ul>
+        <li>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/michael.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text"><strong>Michael Xie</strong><br>Integration Engineer</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/desmond.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text"><strong>Desmond Chin</strong><br>Integration Engineer</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/chris.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text"><strong>Chris Sequeira</strong><br>Integration Engineer</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/denis.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text"><strong>Denis Coelho</strong><br>Integration Analyst</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/louis.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text"><strong>Louis Lan</strong><br>Integration Analyst</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/chirag.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text"><strong>Chiraag Jivanji</strong><br>Integration Analyst</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="img/sergey.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-title"><strong>Sergey Germanov</strong><br>Project Coordinator</p>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+      
+      </div>
+
+    </div>
+
 
     <script type="text/javascript">
         let backdrop = document.getElementById("backdrop");
         let mountain = document.getElementById("mountain");
         let latios = document.getElementById("latios");
+        let latias = document.getElementById("latias");
         let homeTitle = document.getElementById("homeTitle");
 
         window.addEventListener('scroll', function(){
@@ -70,7 +153,8 @@
 
             backdrop.style.top = value * 0.5 + 'px';
             latios.style.left = -value * 1 + 'px';
-            mountain.style.top = -value * 0.1 + 'px';
+            latias.style.left = -value * 0.3 + 'px';
+            mountain.style.top = -value * 0.2 + 'px';
             homeTitle.style.top = value * 1 + 'px';
         })
 

@@ -3,11 +3,58 @@ body{
     min-height:1500px;
 }
 
-.navbar-brand{
+header {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 11;
 }
 
-.home-button-icon{
-    width:3rem;
+header .logo img{
+    width:4rem;
+    padding:6px 6px;
+}
+
+header .logo img:hover{
+    width:4rem;
+    border: 1px solid;
+    padding:6px 6px;
+    border-radius: 50%;
+    border-color: white;
+    background-color: white;
+}
+
+
+header ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin-left: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+}
+
+header ul li a{
+    text-decoration: none;
+    padding: 6px 10px;
+    color: #ffffff;
+    border-radius: 20px;
+}
+
+header ul li a:hover{
+    background:#ffffff;
+    color:rgb(0, 0, 0);
+    text-shadow: 2px 2px rgb(255, 255, 255);
 }
 
 section{
@@ -18,28 +65,6 @@ section{
     display:flex;
     justify-content: center;
     align-items:center;
-}
-
-section:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to bottom, rgb(206, 231, 249), transparent);
-    z-index: 10;
-}
-
-section:after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgb(206, 231, 249));
-    z-index: 10;
-    mix-blend-mode: color;
 }
 
 section img{
@@ -53,6 +78,8 @@ section img{
 }
 
 #homeTitle{
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 3px 3px rgb(99, 98, 98);
     position:relative;
     margin-bottom: 20vh;
     color: #fff;
@@ -63,9 +90,88 @@ section img{
 
 #mountain{
     z-index: 2;
+    margin-top: 200px;
 }
 
 #latios{
     padding-left:700px;
+    margin-top: 100px;
     z-index: 2;
+}
+
+#latias{
+    margin-top:400px;
+    z-index: 1;
+}
+
+.infoPageOuter{
+    position:absolute;
+    display: table;
+    width: 100%;
+    height: 100vh;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(224,239,250,1) 56%, rgba(206,231,249,1) 100%);
+}
+
+.infoPageInner{
+    display: table-cell;
+    vertical-align: top;
+    text-align: center;
+}
+
+
+.centeredInnerPage {
+    display: inline-block;
+    text-align: center;
+    padding : 20px;
+}
+
+.centeredInnerPage h2{
+    font-family: 'Bebas Neue', cursive;
+    color:white;
+    text-shadow: 3px 3px rgb(99, 98, 98);
+    font-size: 92px;
+}
+
+.centeredInnerPage h3{
+    font-family: 'Bebas Neue', cursive;
+    color:white;
+    text-shadow: 3px 3px rgb(99, 98, 98);
+    font-size: 48px;
+}
+
+.centeredInnerPage p{
+    font-family: 'Quicksand', sans-serif;
+    font-size:22px;
+    
+}
+
+.teamCards{
+    margin-top: -35rem;
+    vertical-align: middle;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    font-weight: 400;
+}
+
+.teamCards li{
+    display:flex;
+}
+
+.card{
+    margin:auto;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:270px;
+    height:270px;
+    object-fit: cover;
+    margin:auto;
 }
